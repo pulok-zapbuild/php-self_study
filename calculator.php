@@ -1,36 +1,61 @@
 <?php
+
+
+class Calci
+{
+	
+	function add($a,$b)#to add two variable
+	{
+		echo $a+$b;# code...
+	}
+	function sub($a,$b)#to subtract two variable
+	{
+		echo $a-$b;
+	}
+	function mul($a,$b)#to multiply two variable
+	{
+		echo $a*$b;
+	}
+	function div($a,$b)#to perform the division
+	{
+		echo $a/$b;
+	}
+	function root($a)#to find the root of a variable
+	{
+		$b=sqrt($a);
+		echo $b;
+	}
+}
+#craeting the object of class"calci"
+$obj=new Calci();
+
+#here we are getting the value form by post method
 $first = $_POST['first'];
 $second = $_POST['second'];
 $op = $_POST["op"];
 echo "<center>";
-if(empty($first))
-	echo "first number can't be empty";
-else
-{
-echo $op."<br>";
-if($op=="&#8730")
-{
-	echo sqrt($first);
-}
 
 echo "result is ";
 switch ($op) {
 	case '+':
-		echo $first+$second;# code...
+	#calling the add() function to perform the addition
+		$obj->add($first,$second);
 		break;
 	case '-':
-		echo $first-$second;# code...
+	#calling the sub() function to perform the subtraction
+		$obj->sub($first,$second);# code...
 		break;
 	case '*':
-		echo $first*$second;# code...
+	#calling the mul() function to perform the multiplication
+		$obj->mul($first,$second);# code...
 		break;
 	case '/':
-		echo $first/$second;# code...
+	#calling the div() function to perform the division
+		$obj->div($first,$second);# code...
 		break;
 	case '&#8730':
-		echo "abc";
-		$as=sqrt($first);
-		echo $as;# code...
+	#calling the root() function to perform the square root
+		$obj->root($first);
 		break;
 	default:
 		# code...
