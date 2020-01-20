@@ -33,6 +33,7 @@ $obj=new Calci();
 $first = $_POST['first'];
 $second = $_POST['second'];
 $op = $_POST["op"];
+$r="&#8730";
 echo "<center>";
 
 echo "result is ";
@@ -53,16 +54,16 @@ switch ($op) {
 	#calling the div() function to perform the division
 		$obj->div($first,$second);# code...
 		break;
-	case '&#8730':
+	case 'rt':
 	#calling the root() function to perform the square root
 		$obj->root($first);
 		break;
 	default:
-		# code...
+		 echo acb;# code...
 		break;
 	
 }
-}
+
 echo "</center>";
 
 ?>
