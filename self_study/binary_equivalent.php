@@ -1,8 +1,9 @@
 <?php
-    $decimal=128;
+    $decimal=5784;
     $dec=1;
     $count=0;
     $res=0;
+    $max=0;
     while($decimal>0)
     {
         if($decimal%2)
@@ -15,7 +16,8 @@
         $count++;
         $decimal=$decimal/2;
     }
-    echo $res;
+    echo $res."\n";
+    
 
 
 ?>
