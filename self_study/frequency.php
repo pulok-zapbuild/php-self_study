@@ -8,10 +8,7 @@
         for($j=0;$j<$i;$j++)
         {
             if($str[$i]==$str[$j])
-            {
                 $set=0;
-            
-            }
         }
         if($set==1)
         {
