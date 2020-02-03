@@ -1,0 +1,14 @@
+<?php
+    $arr=array('1','2','3','4','5');
+    array_splice($arr,3,0,"$");
+    print_r($arr);
+    $ar1=array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40");
+    asort($ar1);
+    print_r($ar1);
+    ksort($ar1);
+    print_r($ar1);
+    arsort($ar1);
+    print_r($ar1);
+    krsort($ar1);
+    print_r($ar1);
+?>
