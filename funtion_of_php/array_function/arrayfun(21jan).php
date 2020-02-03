@@ -72,7 +72,7 @@
       print_r(array_merge($ar2[0],$ar2[2]));
       print_r(array_merge_recursive($ar2[0],$ar1));
 
-    
+      echo array_product($ar2[0]);
 
 
 ?>
