@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+
+	<center>
+		<form method="post" action="calculator.php"> <!--using post method to send the data-->
+		<table>
+			
+			
+			<tr>
+				<td>Frist Number : </td>
+				<td>
+					<input type="number" name="first" id="first" required><!--input of first no.-->
+				</td>
+			</tr>
+			<tr>
+				<td>Operation : </td>
+				<td>
+					<select name="op"><!--selection of operation-->
+						<option>+</option>
+						<option>-</option>
+						<option>*</option>
+						<option>/</option>
+						<option>rt</option>
+					</select>
+				</td>
+				<td><input type="submit" name="result" value="result"></td>
+			</tr>
+			
+			<tr>
+				<td>Second Number : </td>
+				<td>
+					<input type="number" name="second" required><!--input of second number-->
+				</td>
+			</tr>
+		</table>
+	</form>
+	</center>
+</body>
+</html>
